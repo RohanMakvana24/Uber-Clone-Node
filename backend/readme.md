@@ -30,9 +30,13 @@ Simple Authentication Endpoint for users 🎯
 
 #### Login Users
 
-`http
-  POST /users/login
-`
+<div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+
+```http
+POST /users/login
+```
+
+</div>
 
 #### Body raw(json)
 
@@ -48,3 +52,7 @@ Simple Authentication Endpoint for users 🎯
   - 'email' (string , required ) : User Email (must be valid).
   - 'password' (string , reqired ) : User Password (must be reqiuired 6 charcater long)
 - 'token' (string): JWT Token
+
+```
+
+```
