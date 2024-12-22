@@ -6,9 +6,13 @@ Simple Authentication Endpoint for users 🎯
 
 #### Ragister Users
 
+<div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+
 ```http
-  POST /users/ragister
+POST /users/ragister
 ```
+
+</div>
 
 #### Body raw(json)
 
