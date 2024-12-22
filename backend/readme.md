@@ -30,9 +30,9 @@ Simple Authentication Endpoint for users 🎯
 
 #### Login Users
 
-```http
+`http
   POST /users/login
-```
+`
 
 #### Body raw(json)
 
