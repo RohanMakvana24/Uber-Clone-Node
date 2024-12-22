@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 import { body } from 'express-validator'
-import { RagisterUser } from '../controllers/UserController.js';
+import { LoginUser, RagisterUser } from '../controllers/UserController.js';
 const userRoutes = express.Router();
 
 // ^ Ragister Route ^ //
@@ -14,6 +14,6 @@ userRoutes.post("/ragister", [
 userRoutes.post("/login", [
     body("email").isEmail().withMessage("Invalid Email"),
     body("password").isLength({ min: 6 }).withMessage("Password Must be at least 6 character long")
-],)
+], LoginUser)
 
 export default userRoutes;

@@ -41,7 +41,7 @@ userSchema.statics.hashPassword = (password) => {
 }
 
 // ^ Comapare Password ^ //
-userSchema.methods.comaprePassword = async (password) => {
+userSchema.methods.comaprePassword = async function (password) {
     return await bcrypt.compare(password, this.password)
 }
 
